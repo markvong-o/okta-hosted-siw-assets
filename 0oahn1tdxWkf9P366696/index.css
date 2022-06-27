@@ -1,0 +1,117 @@
+/* Iron Bank React App */
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+:root {
+    --core-font: 'Monda', serif;
+    --core-color: #0975A5;
+}
+
+body {
+    /* border: 1px black solid; */
+    font-family: var(--core-font);
+    background-color: rgba(0, 0, 0, 1);
+}
+/*
+body::after {
+    content: "";
+    background-image: url("/OktaCSS/bank.jpg");
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    z-index: -1;   
+  } */
+.login-bg-image {
+    background-image: url("/OktaCSS/bank.jpg") !important;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#okta-sign-in * {
+    color: white !important;
+}
+
+#okta-sign-in .o-form .input-fix input[type=number], #okta-sign-in .o-form .input-fix input[type=password], #okta-sign-in .o-form .input-fix input[type=tel], #okta-sign-in .o-form .input-fix input[type=text], #okta-sign-in .o-form .input-fix input[type=textbox] {
+    color: black !important;
+}
+
+#okta-sign-in .authenticator-row .authenticator-button .button {
+    color: black !important;
+    font-weight: 1000px !important;
+}
+#okta-sign-in .okta-form-title {
+    font-weight: 1000px !important;
+    font-size: 1.1rem !important;
+}
+
+#okta-sign-in .auth-content {
+    font-family: 'Monda', serif;
+}
+
+#okta-sign-in.auth-container.main-container {
+    border-radius: 16px;
+    background-color: #1B1C1D;
+    margin-top: 0;
+    width: 25rem;
+}
+
+#okta-sign-in .o-form .o-form-input .o-form-control {
+    border-radius: 16px;
+    color: black !important;
+}
+
+#okta-sign-in.auth-container .button-primary {
+    font-weight: bold;
+    border-radius: 16px;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 90vh !important;
+    width: 100%;
+  }
+  
+  #left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-height: 100% !important;
+    color: white !important;
+  }
+
+  #left-content > ul {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0;
+      font-size: 1.2rem;
+  }
+
+  #title {
+      font-size: 2.6rem;
+      font-weight:bold;
+  }
+
+  .text {
+      font-size: 1.6rem;
+  }
+  
+  .brand, li {
+      color: #0975A5;
+  }
+
+  #right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100% !important;
+    width: 50%;
+  }
