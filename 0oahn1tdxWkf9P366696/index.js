@@ -10,7 +10,7 @@ var head = document.head;
 var link = document.createElement('link');
 link.type = 'text/css';
 link.rel = 'stylesheet';
-link.href = 'https://markvong-o.github.io/OktaCSS/' + getClientId() + '.css';
+link.href = `https://markvong-o.github.io/okta-hosted-siw-assets/${getClientId()}/index.css`;
 head.appendChild(link);
 
 console.log(getClientId(), "testing this...");
